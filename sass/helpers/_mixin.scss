@@ -1,0 +1,20 @@
+@mixin styleText($fs, $fw, $color, $line) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $color;
+    line-height: $line;
+}
+
+@mixin setButton($bg, $color, $pd_TB, $pd_LR, $radius) {
+    background-color: $bg;
+    color: $color;
+    padding: $pd_TB $pd_LR;
+    border-radius: $radius;
+}
+
+@mixin setInput($pd_TB, $pd_LR, $radius) {
+    border: 1px solid #e1e4e8;
+    padding: $pd_TB $pd_LR;
+    border-radius: $radius;
+    overflow: hidden;
+}
