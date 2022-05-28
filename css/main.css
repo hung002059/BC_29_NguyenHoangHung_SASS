@@ -180,7 +180,7 @@ header .navbar-collapse .nav-item a:hover {
 #getInfo .card_content .btn_submit:hover {
   background-color: white;
   border: 1px solid #b61984;
-  color: white;
+  color: #b61984;
 }
 
 footer img {
