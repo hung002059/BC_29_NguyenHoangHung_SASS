@@ -18,3 +18,12 @@
     border-radius: $radius;
     overflow: hidden;
 }
+
+@mixin hoverButton($time, $bg_1, $bg_2, $color) {
+    transition: all $time;
+    &:hover {
+        background-color: $bg_1;
+        border: 1px solid $bg_2;
+        color: $color;
+    }
+}

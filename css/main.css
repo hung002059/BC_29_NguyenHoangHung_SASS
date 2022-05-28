@@ -174,11 +174,83 @@ header .navbar-collapse .nav-item a:hover {
   color: white;
   margin: 30px 0px;
   transition: all 0.75s;
+  transition: all 1s;
 }
 
 #getInfo .card_content .btn_submit:hover {
   background-color: white;
-  color: #b61984;
   border: 1px solid #b61984;
+  color: white;
+}
+
+footer img {
+  position: relative;
+  z-index: -999;
+}
+
+footer .content {
+  overflow: hidden;
+  position: absolute;
+  color: white;
+}
+
+footer .content h4 {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  line-height: 80px;
+}
+
+footer .content ul {
+  list-style: none;
+}
+
+footer .content ul li {
+  margin: 10px 0px;
+}
+
+footer .content .link li,
+footer .content .about li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+footer .content .link li a,
+footer .content .about li a {
+  font-size: 15px;
+  font-weight: 600;
+  color: inherit;
+  line-height: 35px;
+  transition: all 0.25s;
+  text-decoration: none;
+}
+
+footer .content .link li a:hover,
+footer .content .about li a:hover {
+  opacity: 0.8;
+}
+
+footer .content .newsletter button {
+  border: 1px solid #e1e4e8;
+  padding: 10px 15px;
+  border-radius: 30px;
+  overflow: hidden;
+  margin: 10px 0px;
+  width: 100%;
+}
+
+footer .content .newsletter .btnEmail button {
+  background-color: transparent;
+  border: 1px solid #be048e;
+  color: white;
+}
+
+footer .content .newsletter .btnSend button {
+  transition: all 1s;
+}
+
+footer .content .newsletter .btnSend button:hover {
+  background-color: #b61984;
+  border: 1px solid white;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */

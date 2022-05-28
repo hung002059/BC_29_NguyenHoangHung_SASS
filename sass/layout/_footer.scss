@@ -1,0 +1,54 @@
+footer {
+    // position: relative;
+    img {
+        position: relative;
+        z-index: -999;
+    }
+    .content {
+        overflow: hidden;
+        position: absolute;
+        color: $color_2;
+        h4 {
+            @include styleText($fs_4, $fw_2, $color_2, $line_1);
+        }
+        ul {
+            list-style: none;
+            li {
+                margin: 10px 0px;
+            }
+        }
+        .link,
+        .about {
+            li {
+                border-bottom: 1px solid rgba(0, 0, 0, .1);
+                a {
+                    @include styleText($fs_1, $fw_1, $color_5, $line_3);
+                    transition: all 0.25s;
+                    text-decoration: none;
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+        .newsletter {
+            button {
+                @include setInput($pd_TB_1, $pd_LR_2, $radius);
+                margin: 10px 0px;
+                width: 100%;
+            }
+            .btnEmail {
+                button {
+                    background-color: transparent;
+                    border: 1px solid #be048e;
+                    color: $color_2;
+                }
+            }
+            .btnSend {
+                button {
+                    @include hoverButton($time, $bg_color_1, $color_2, $color_2);
+                }
+            }
+        }
+    }
+}
