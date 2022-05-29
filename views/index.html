@@ -15,9 +15,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- SASS -->
-    <link rel="stylesheet" href="./sass/main.scss">
+    <link rel="stylesheet" href="../sass/main.scss">
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
@@ -27,7 +27,7 @@
                 <nav class="navbar navbar-expand-md">
                     <!-- Brand -->
                     <a class="navbar-brand col-2" href="#">
-                        <img src="./images/crest.png" alt="">
+                        <img src="../images/crest.png" alt="">
                     </a>
                     <!-- Toggler/collapsibe Button -->
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -96,7 +96,7 @@
     </header>
     <section id="carousel">
         <div class="content">
-            <img class="img-top w-100" src="./images/yellow_top_wave_01.png" alt="">
+            <img class="img-top w-100" src="../images/yellow_top_wave_01.png" alt="">
             <div class="container">
                 <div class="title d-flex align-items-center row">
                     <div class="carousel_title col-xs-12 col-md-12 col-lg-5 col-5">
@@ -104,102 +104,75 @@
                         <h1>The language teaching experts</h1>
                     </div>
                     <div class="content_imageTitle col-xs-12 col-md-12 col-lg-7 col-7">
-                        <img src="./images/hero_team.png">
+                        <img src="../images/hero_team.png">
                     </div>
                 </div>
             </div>
-            <img class="w-100" src="./images/Violet_top_left_wave.png" alt="">
+            <img class="w-100" src="../images/Violet_top_left_wave.png" alt="">
         </div>
     </section>
     <section id="customer">
-        <div class="content container m-auto row">
-            <div class="overlay p-2.5 pb-2.5 col-3">
-                <div class="card">
-                    <img class="card-img w-100" src="./images/teacher_1.jpg" alt="">
-                    <div class="card-body text-center">
-                        <p class="card-title">ITALIAN</p>
-                        <p class="card-name">July Roberts</p>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+        <div class="container m-auto pb-4">
+            <button class="themMoi btn btn-success" type="submit" data-toggle="modal" data-target="#myModal">+ Thêm mới</button>
+        </div>
+        <div id="tableList">
+            <table class="table table-bordered container text-center">
+                <thead>
+                    <th>STT</th>
+                    <th>Tên Giáo Viên</th>
+                    <th>Mô tả</th>
+                    <th>Hình Ảnh</th>
+                    <th>Chức năng</th>
+                </thead>
+                <tbody id="tblDanhSachSP"></tbody>
+            </table>
+        </div>
+        <div class="modal fade  " id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading</h4>
+                        <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                  </button>
                     </div>
-                </div>
-            </div>
-            <div class="overlay p-2.5 col-3">
-                <div class="card">
-                    <img class="card-img w-100" src="./images/teacher_2.jpg" alt="">
-                    <div class="card-body text-center">
-                        <p class="card-title">FRENCH</p>
-                        <p class="card-name">Jon Stone</p>
-                        <p class="card-text">Nanotechnology immersion along the information.</p>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>Tên</label>
+                            <input id="TenSP" class="form-control" placeholder="Nhập vào tên sản phẩm" />
+                        </div>
+                        <div class="form-group">
+                            <label>Mô tả</label>
+                            <input id="GiaSP" class="form-control" placeholder="Nhập vào mô tả" />
+                        </div>
+                        <div class="form-group">
+                            <label>Hình Ảnh</label>
+                            <input id="HinhSP" class="form-control" placeholder="Nhập vào hình" />
+                        </div>
+                        <div class="form-group">
+                            <label for="">Chọn: </label>
+                            <select class="form-control" id="loaiSP">
+                                <option value="phone">Giảng Viên</option>
+                                <option value="laptop">Học viên</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="overlay p-2.5 col-3">
-                <div class="card">
-                    <img class="card-img w-100" src="./images/teacher_3.jpg" alt="">
-                    <div class="card-body text-center">
-                        <p class="card-title">JAPANESE</p>
-                        <p class="card-name">Emma Stone</p>
-                        <p class="card-text">Bring to the table win-win survival strategies to ensure.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="overlay p-2.5 col-3">
-                <div class="card">
-                    <img class="card-img w-100" src="./images/teacher_4.jpg" alt="">
-                    <div class="card-body text-center">
-                        <p class="card-title">CHINESE</p>
-                        <p class="card-name">Mark Lee</p>
-                        <p class="card-text">Proactive domination. At the end of the day, going forward.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="overlay p-2.5 col-3">
-                <div class="card">
-                    <img class="card-img w-100" src="./images/teacher_5.jpg" alt="">
-                    <div class="card-body text-center">
-                        <p class="card-title">RUSSIAN</p>
-                        <p class="card-name">John Doe</p>
-                        <p class="card-text">A new normal that has evolved from generation X.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="overlay p-2.5 col-3">
-                <div class="card">
-                    <img class="card-img w-100" src="./images/teacher_6.jpg" alt="">
-                    <div class="card-body text-center">
-                        <p class="card-title">SWEDEN</p>
-                        <p class="card-name">Jane Smith</p>
-                        <p class="card-text">Heading towards a streamlined cloud solution.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="overlay p-2.5 col-3">
-                <div class="card">
-                    <img class="card-img w-100" src="./images/teacher_7.jpg" alt="">
-                    <div class="card-body text-center">
-                        <p class="card-title">SPANISH</p>
-                        <p class="card-name">Hanna Alverez</p>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="overlay p-2.5 col-3">
-                <div class="card">
-                    <img class="card-img w-100" src="./images/teacher_8.jpg" alt="">
-                    <div class="card-body text-center">
-                        <p class="card-title">ITALIAN</p>
-                        <p class="card-name">July Roberts</p>
-                        <p class="card-text">Capitalize on low hanging fruit to identify a ballpark.</p>
+                    <!-- Modal footer -->
+                    <div class="modal-footer m-auto">
+                        <button class="btn btn-success m-2">Thêm</button>
+                        <button class="btn btn-warning m-2">Cập nhật</button>
                     </div>
                 </div>
             </div>
         </div>
-        <img class="img-bot w-100" src="./images/Wave_White_bottom_right_shape_01.png" alt="">
+        <img class="img-bot w-100" src="../images/Wave_White_bottom_right_shape_01.png" alt="">
     </section>
     <section id="getInfo">
         <div class="container m-auto row">
             <div class="col-xl-7">
-                <img src="./images/conatct_inner.png" alt="">
+                <img src="../images/conatct_inner.png" alt="">
             </div>
             <div class="col-xl-5">
                 <div class="card_content">
@@ -239,7 +212,7 @@
                 </div>
             </div>
         </div>
-        <img class="w-100" src="./images/accent_bottom_wave_01.png" alt="">
+        <img class="w-100" src="../images/accent_bottom_wave_01.png" alt="">
     </section>
     <footer>
         <div class="content w-100">
@@ -319,13 +292,20 @@
                 </div>
             </div>
         </div>
-        <img class="w-100" src="./images/footer_background.jpg" alt="">
+        <img class="w-100" src="../images/footer_background.jpg" alt="">
     </footer>
+    <!-- Axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+
+
+
+    <script src="../service/index.js"></script>
+    <script src="../controllers/main.js"></script>
 </body>
 
 </html>
