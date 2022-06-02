@@ -24,4 +24,11 @@
     .overlay {
         padding-bottom: 25px;
     }
+    .button {
+        button {
+             :nth-child(2) {
+                display: none;
+            }
+        }
+    }
 }
