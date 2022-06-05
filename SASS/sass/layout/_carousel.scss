@@ -1,0 +1,11 @@
+#carousel {
+    position: relative;
+    .carousel_title {
+        p {
+            @include styleText($fs_3, $fw_2, $color_1, $line_1);
+        }
+        h1 {
+            @include styleText(60px, 900, $color_3, $line_1);
+        }
+    }
+}

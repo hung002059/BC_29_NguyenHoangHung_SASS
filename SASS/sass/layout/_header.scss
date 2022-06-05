@@ -1,0 +1,44 @@
+header {
+    position: absolute;
+    background-color: transparent;
+    z-index: 1;
+    margin: auto;
+    transform: translate(25%, 25%);
+    .navbar-collapse {
+        #info {
+            a {
+                margin: 0px 10px;
+            }
+        }
+        #contact {
+            .nav-item:first-of-type {
+                span {
+                    @include setButton($bg_color_1, $color_2, $pd_TB_1, $pd_LR_1, $radius);
+                    transition: all 0.5s;
+                    i {
+                        @include styleText($fs_2, $fw_1, $color_2, $line_1);
+                    }
+                    &:hover {
+                        @include setButton(white, $color_1, $pd_TB_1, $pd_LR_1, $radius);
+                        i {
+                            @include styleText($fs_2, $fw_1, $color_2, $line_1);
+                        }
+                        border: 1px solid $bg_color_1;
+                    }
+                }
+                .nav-item i {
+                    font-size: 10px;
+                }
+            }
+        }
+        .nav-item {
+            a {
+                @include styleText($fs_1, $fw_1, $color_3, $line_1);
+                transition: all 0.5s;
+                &:hover {
+                    @include styleText($fs_1, $fw_1, $color_1, $line_1);
+                }
+            }
+        }
+    }
+}

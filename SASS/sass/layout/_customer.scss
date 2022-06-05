@@ -1,0 +1,27 @@
+#customer {
+    background-color: $bg_color_2;
+    background: fixed cover center/no-repeat;
+    z-index: 10;
+    .card {
+        padding: 0px;
+        border: 0px;
+        border-radius: 10px;
+        .card-body {
+            p:nth-child(1) {
+                @include styleText($fs_2, $fw_1, $color_1, $line_2);
+            }
+            p:nth-child(2) {
+                @include styleText($fs_3, $fw_2, $color_3, $line_2);
+            }
+            p:nth-child(3) {
+                @include styleText($fs_1, $fw_2, $color_4, $line_2);
+            }
+        }
+        img {
+            border-radius: 10px;
+        }
+    }
+    .overlay {
+        padding-bottom: 25px;
+    }
+}

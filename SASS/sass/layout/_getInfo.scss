@@ -1,0 +1,35 @@
+#getInfo {
+    .card_content {
+        @include setInput($pd_TB_1, $pd_LR_1, $radius);
+        h1 {
+            @include styleText($fs_5, $fw_3, black, $line_1);
+        }
+        .inputCard {
+            i {
+                color: $color_1;
+                margin: 0px 15px;
+            }
+            span {
+                @include setInput($pd_TB_1, $pd_LR_2, $radius);
+            }
+        }
+        .select {
+            select {
+                border-radius: 30px;
+            }
+        }
+        .inputMessage {
+            textarea {
+                @include setInput($pd_TB_1, $pd_LR_1, $radius);
+            }
+        }
+        .btn_submit {
+            @include setInput($pd_TB_1, $pd_LR_3, $radius);
+            background-color: $bg_color_1;
+            color: $color_2;
+            margin: 30px 0px;
+            transition: all 0.75s;
+            @include hoverButton($time, $bg_color_3, $bg_color_1, $color_1);
+        }
+    }
+}

@@ -1,0 +1,256 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: 'Tiro Tamil', serif;
+}
+
+header {
+  position: absolute;
+  background-color: transparent;
+  z-index: 1;
+  margin: auto;
+  transform: translate(25%, 25%);
+}
+
+header .navbar-collapse #info a {
+  margin: 0px 10px;
+}
+
+header .navbar-collapse #contact .nav-item:first-of-type span {
+  background-color: #b61984;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: all 0.5s;
+}
+
+header .navbar-collapse #contact .nav-item:first-of-type span i {
+  font-size: 10px;
+  font-weight: 600;
+  color: white;
+  line-height: 80px;
+}
+
+header .navbar-collapse #contact .nav-item:first-of-type span:hover {
+  background-color: white;
+  color: #b61984;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 1px solid #b61984;
+}
+
+header .navbar-collapse #contact .nav-item:first-of-type span:hover i {
+  font-size: 10px;
+  font-weight: 600;
+  color: white;
+  line-height: 80px;
+}
+
+header .navbar-collapse #contact .nav-item:first-of-type .nav-item i {
+  font-size: 10px;
+}
+
+header .navbar-collapse .nav-item a {
+  font-size: 15px;
+  font-weight: 600;
+  color: black;
+  line-height: 80px;
+  transition: all 0.5s;
+}
+
+header .navbar-collapse .nav-item a:hover {
+  font-size: 15px;
+  font-weight: 600;
+  color: #b61984;
+  line-height: 80px;
+}
+
+#carousel {
+  position: relative;
+}
+
+#carousel .carousel_title p {
+  font-size: 25px;
+  font-weight: 700;
+  color: #b61984;
+  line-height: 80px;
+}
+
+#carousel .carousel_title h1 {
+  font-size: 60px;
+  font-weight: 900;
+  color: black;
+  line-height: 80px;
+}
+
+#customer {
+  background-color: #dcd1f0;
+  background: fixed cover center/no-repeat;
+  z-index: 10;
+}
+
+#customer .card {
+  padding: 0px;
+  border: 0px;
+  border-radius: 10px;
+}
+
+#customer .card .card-body p:nth-child(1) {
+  font-size: 10px;
+  font-weight: 600;
+  color: #b61984;
+  line-height: 30px;
+}
+
+#customer .card .card-body p:nth-child(2) {
+  font-size: 25px;
+  font-weight: 700;
+  color: black;
+  line-height: 30px;
+}
+
+#customer .card .card-body p:nth-child(3) {
+  font-size: 15px;
+  font-weight: 700;
+  color: #00000085;
+  line-height: 30px;
+}
+
+#customer .card img {
+  border-radius: 10px;
+}
+
+#customer .overlay {
+  padding-bottom: 25px;
+}
+
+#getInfo .card_content {
+  border: 1px solid #e1e4e8;
+  padding: 10px 20px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+#getInfo .card_content h1 {
+  font-size: 40px;
+  font-weight: 900;
+  color: black;
+  line-height: 80px;
+}
+
+#getInfo .card_content .inputCard i {
+  color: #b61984;
+  margin: 0px 15px;
+}
+
+#getInfo .card_content .inputCard span {
+  border: 1px solid #e1e4e8;
+  padding: 10px 15px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+#getInfo .card_content .select select {
+  border-radius: 30px;
+}
+
+#getInfo .card_content .inputMessage textarea {
+  border: 1px solid #e1e4e8;
+  padding: 10px 20px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+#getInfo .card_content .btn_submit {
+  border: 1px solid #e1e4e8;
+  padding: 10px 60px;
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: #b61984;
+  color: white;
+  margin: 30px 0px;
+  transition: all 0.75s;
+  transition: all 1s;
+}
+
+#getInfo .card_content .btn_submit:hover {
+  background-color: white;
+  border: 1px solid #b61984;
+  color: #b61984;
+}
+
+footer img {
+  position: relative;
+  z-index: -999;
+}
+
+footer .content {
+  overflow: hidden;
+  position: absolute;
+  color: white;
+}
+
+footer .content h4 {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  line-height: 80px;
+}
+
+footer .content ul {
+  list-style: none;
+}
+
+footer .content ul li {
+  margin: 10px 0px;
+}
+
+footer .content .link li,
+footer .content .about li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+footer .content .link li a,
+footer .content .about li a {
+  font-size: 15px;
+  font-weight: 600;
+  color: inherit;
+  line-height: 35px;
+  transition: all 0.25s;
+  text-decoration: none;
+}
+
+footer .content .link li a:hover,
+footer .content .about li a:hover {
+  opacity: 0.8;
+}
+
+footer .content .newsletter button {
+  border: 1px solid #e1e4e8;
+  padding: 10px 15px;
+  border-radius: 30px;
+  overflow: hidden;
+  margin: 10px 0px;
+  width: 100%;
+}
+
+footer .content .newsletter .btnEmail button {
+  background-color: transparent;
+  border: 1px solid #be048e;
+  color: white;
+}
+
+footer .content .newsletter .btnSend button {
+  transition: all 1s;
+}
+
+footer .content .newsletter .btnSend button:hover {
+  background-color: #b61984;
+  border: 1px solid white;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */
