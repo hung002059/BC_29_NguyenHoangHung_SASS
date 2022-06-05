@@ -7,8 +7,9 @@ function Validation() {
     this.arr = [];
     this.kiemTraRong = function(value, errorID, message) {
         if (value == "") {
-            returnFalse(errorID, message);
+            return returnFalse(errorID, message);
         }
+        return true;
     }
     this.kiemTraChuoiTen = function(value, errorID, message) {
         var letterName =

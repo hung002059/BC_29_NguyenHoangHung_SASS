@@ -113,7 +113,7 @@
     </section>
     <section id="customer">
         <div class="container m-auto pb-4">
-            <button class="themMoi btn btn-success" type="submit" data-toggle="modal" data-target="#myModal">+ Thêm mới</button>
+            <button id="themMoi" onclick="themMoiTT()" class="themMoi btn btn-success" data-toggle="modal" data-target="#myModal">+ Thêm mới</button>
         </div>
         <div id="tableList">
             <table class="table table-bordered container text-center">
@@ -134,7 +134,7 @@
                 <div class="modal-content">
                     <!-- Modal Header -->
                     <div class="modal-header">
-                        <h4 class="modal-title">Thêm thông tin</h4>
+                        <h4 class="modal-title">Thêm thông tin mới</h4>
                         <button type="button" class="close" data-dismiss="modal">
                     &times;
                   </button>
@@ -188,9 +188,7 @@
 
                     </div>
                     <!-- Modal footer -->
-                    <div class="button modal-footer m-auto">
-                        <button id="add" class="btn btn-success m-2" onclick="addProduct()">Thêm</button>
-                    </div>
+                    <div class="button modal-footer m-auto"></div>
                 </div>
             </div>
         </div>

@@ -69,6 +69,17 @@ function layThongTinDoiTuong(id) {
     return doiTuong;
 }
 
+function themMoiTT() {
+    document.getElementById('modal-title')[0].innerHTML = "Thêm thông tin mới";
+    var btnFooter = `<button id="add" class="btn btn-warning m-2" onclick="addProduct()">Thêm</button>`;
+    document.getElementsByClassName('modal-footer').style.display='block';
+    document.getElementsByClassName('modal-footer').innerHTML = 123;
+}
+document.getElementById('themMoi').onclick=function(){
+    document.getElementById('modal-title')[0].innerHTML = "Thêm thông tin mới";
+    var btnFooter = `<button id="add" class="btn btn-success m-2" onclick="addProduct()">Thêm</button>`;
+    document.getElementsByClassName('modal-footer').innerHTML = 123;
+}
 function addProduct() {
     var data = layThongTinDoiTuong();
     service
@@ -84,7 +95,6 @@ function addProduct() {
 
 function editProduct(id) {
     document.getElementsByClassName('modal-title')[0].innerHTML = "Sửa thông tin";
-    getID('add').style.display = 'none';
     var btnFooter = `<button id="update" class="btn btn-warning m-2" onclick="upadateProduct(${id})">Cập nhật</button>`;
     document.getElementsByClassName('modal-footer')[0].innerHTML = btnFooter;
     service
@@ -107,6 +117,7 @@ function editProduct(id) {
 
 function upadateProduct(id) {
     var doiTuong = layThongTinDoiTuong(id);
+
     console.log(doiTuong);
     service
         .updateProductAPI(doiTuong)
